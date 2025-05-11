@@ -13,6 +13,15 @@
     </header>
 
     <section class="content">
+
+        <button id="playButton"> tocar musica </button>
+        <script>
+            const button = document.getElementById("playButton");
+            const audio = new Audio("lofi.mp3");
+            button.addEventListener("click", () => {
+                audio.play();
+            });
+        </script>
         
         <p>
             Oi, pois bem, não sou de me expressar muito, então venho através da minha nerdice tentar de alguma forma mostrar o quando cada uma de vocês me moldou para eu estar onde estou agora. 
@@ -54,12 +63,6 @@
     <audio id="music" autoplay loop>
         <source src="lofi.mp3" type="audio/mp3">
     </audio>
-    <script>
-        window.onload = function() {
-        const audio = document.getElementById('music');
-        audio.volume = 0.3; // Volume de 30%
-      };
-    </script>
     </section>
 
     <footer>
